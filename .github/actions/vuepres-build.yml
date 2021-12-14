@@ -1,0 +1,22 @@
+name: VuePress Build
+
+# Controls when the action will run.
+on:
+  push:
+    branches:
+      - "**"
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  build-only:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v2
+
+      - name: Install dependencies
+        run: yarn
+
+      - name: Build
+        run: yarn build
