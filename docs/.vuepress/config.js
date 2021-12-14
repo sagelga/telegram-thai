@@ -2,9 +2,10 @@ module.exports = {
     lang: 'th-TH',
     title: 'Telegram ภาษาไทย',
     description: 'กลุ่มแปลภาษา Telegram ภาษาไทย',
-    logo: 'https://telegram.org/img/t_logo.svg',
 
     themeConfig: {
+        logo: 'https://telegram.org/img/t_logo.svg',
+
         repo: 'sagelga/telegram-thai',
         repoLabel: 'GitHub',
 
@@ -22,6 +23,10 @@ module.exports = {
 
         contributors: true,
         contributorsText: 'แก้ไขโดย',
+
+        //
+
+        navbar: require('./navbar/navbar.js'),
 
     },
 
