@@ -1,6 +1,4 @@
 # ใช้ภาษาไทย
 เพื่อใช้ Telegram เป็นภาษาไทย เพื่อนๆ จำเป็นที่จะต้องกดเข้าไปยังลิงก์ด้านล่าง โดยลิงก์จะทำการเปิดแอพ Telegram ที่อยู่บนอุปกรณ์ของท่านและแสดงตัวเลือกในการเปลี่ยนภาษาเป็นภาษาไทย
 
-[Telegram Language: Thai](https://t.me/setlanguage/thaith)
-
-หรือดูขั้นตอนโดยละเอียด : [วิธีเปลี่ยนภาษาของ Telegram ให้เป็นภาษาไทย](https://www.notion.so/Telegram-f544358ac6214c3fb0395b9fd36d5e0f)
+อ่านขั้นตอนการเปลี่ยนภาษาใน Telegram ฉบับเต็ม พร้อมรูปภาพประกอบได้ที่ : [https://byteside.one/productivity/telegram-use-thai-language/](https://byteside.one/productivity/telegram-use-thai-language/)
