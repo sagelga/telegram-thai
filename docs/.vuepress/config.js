@@ -26,7 +26,7 @@ module.exports = {
         contributors: true,
         contributorsText: 'แก้ไขโดย',
 
-        //
+        // Navigation
 
         navbar: require('./navbar/navbar.js'),
         sidebar: {
