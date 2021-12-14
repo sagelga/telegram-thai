@@ -1,3 +1,5 @@
+const fs = require("fs");
+
 module.exports = {
     lang: 'th-TH',
     title: 'Telegram ภาษาไทย',
@@ -27,6 +29,11 @@ module.exports = {
         //
 
         navbar: require('./navbar/navbar.js'),
+        sidebar: {
+            '/contribute/': getSideBar('contribute'),
+            '/install/': getSideBar('install'),
+            '/community/': getSideBar('community'),
+        },
 
     },
 
@@ -38,4 +45,10 @@ module.exports = {
             },
         ],
     ],
+}
+
+function getSideBar(root) {
+    return fs
+        .readdirSync(process.cwd() + '/docs/' + root)
+        .map(sidebar => sidebar.replace('/index.md', ''))
 }
