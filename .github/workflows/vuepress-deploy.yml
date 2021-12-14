@@ -17,7 +17,7 @@ jobs:
       - name: Install yarn dependencies
         run: yarn
 
-      - name: vuepress-deploy
+      - name: Deploy VuePress Website
         uses: jenkey2011/vuepress-deploy@master
         env:
           ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
