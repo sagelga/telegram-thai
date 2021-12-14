@@ -1,0 +1,28 @@
+name: Vuepress Deploy
+
+on:
+  push:
+    branches: ["main"]
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@master
+
+      - name: Install yarn dependencies
+        run: yarn
+
+      - name: vuepress-deploy
+        uses: jenkey2011/vuepress-deploy@master
+        env:
+          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+          TARGET_REPO: sagelga/telegram-thai
+          TARGET_BRANCH: website
+          BUILD_SCRIPT: yarn build
+          BUILD_DIR: docs/.vuepress/dist/
+          CNAME: telegram.sagelga.com
