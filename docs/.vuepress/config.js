@@ -1,8 +1,8 @@
-const fs = require("fs");
+// const fs = require("fs");
 
 module.exports = {
     lang: 'th-TH',
-    title: 'Telegram ภาษาไทย',
+    title: 'กลุ่มแปลภาษา Telegram',
     description: 'กลุ่มแปลภาษา Telegram ภาษาไทย',
 
     themeConfig: {
@@ -30,9 +30,26 @@ module.exports = {
 
         navbar: require('./navbar/navbar.js'),
         sidebar: {
-            '/contribute/': getSideBar('contribute'),
-            '/install/': getSideBar('install'),
-            '/community/': getSideBar('community'),
+            '/contribute/': [{
+                text: 'เข้าร่วม',
+                children: [
+                    '/contribute/',
+                    '/contribute/guideline/'
+                ]
+            }],
+            '/install/': [{
+                text: 'ใช้งาน',
+                children: [
+                    '/install/',
+                ]
+            }],
+            '/community/': [{
+                text: 'ชุมชน',
+                children: [
+                    '/community/',
+                    '/community/guideline/'
+                ]
+            }],
         },
 
     },
@@ -47,8 +64,9 @@ module.exports = {
     ],
 }
 
-function getSideBar(root) {
-    return fs
-        .readdirSync(process.cwd() + '/docs/' + root)
-        .map(sidebar => sidebar.replace('/index.md', ''))
-}
+// function getSideBar(root) {
+//     return fs
+//         .readdirSync(process.cwd() + '/docs/' + root)
+//         .map(sidebar => sidebar.replace('/index.md', ''))
+//         .replace(sidebar => )
+// }

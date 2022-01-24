@@ -1,19 +1,25 @@
 ---
 home: true
-heroText: Telegram ภาษาไทย
 heroImage: https://telegram.org/img/t_logo.svg
 actions:
     - text: แปลภาษาไทย
-      link: /contribute/guideline/
+      link: /contribute/
       type: primary
     - text: ใช้ภาษาไทย
       link: /install/
-      type: secondary
+      type: primary
     - text: ชุมชนการแปล
+      link: /community/
+      type: primary
+    - text: แนวทางในการแปล
+      link: /community/guideline/
+      type: secondary
+    - text: ข้อกำหนดในการใช้งานกลุ่ม
       link: /community/guideline/
       type: secondary
 ---
 
+## ยินดีต้อนรับ
 ยินดีต้อนรับทุกคนเข้าสู่หน้าแรกของเว็บไซต์กลุ่มการแปล Telegram เป็นภาษาไทย และเรายินดีมากที่จะต้อนรับคุณ
 เข้าสู่กลุ่มผู้ใช้งานที่ต้องการให้ Telegram นั้นรองรับภาษาไทยให้กับคุณและคนอีกเป็นจำนวนมากได้ใช้งานภาษาไทยภายในแอพฯ
 ได้สะดวกยิ่งขึ้น

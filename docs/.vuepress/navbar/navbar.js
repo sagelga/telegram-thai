@@ -1,8 +1,4 @@
 module.exports = [{
-        text: 'หน้าแรก',
-        link: '/'
-    },
-    {
         text: 'เข้าร่วม',
         link: '/contribute/'
     },
@@ -11,7 +7,11 @@ module.exports = [{
         link: '/install/'
     },
     {
-        text: 'ชุมขน',
+        text: 'ชุมชน',
         link: '/community/'
+    },
+    {
+        text: 'Telegram',
+        link: 'https://translations.telegram.org/thaith'
     }
 ]
