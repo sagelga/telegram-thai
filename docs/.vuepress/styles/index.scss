@@ -1,40 +1,11 @@
-// Documentation: https://v2.vuepress.vuejs.org/reference/default-theme/styles.html
-
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=IBM+Plex+Sans+Thai:wght@500;700&family=Sarabun:wght@500;700&display=swap');
+@import url('https://template.sagelga.com/styles/stylesheet.css');
 
 :root {
-    // brand colors
+    --font-family: 'Anuphan', 'IBM Plex Sans', sans-serif;
     --c-brand: #3e8baf;
     --c-brand-light: #3e8baf;
-}
-
-html.dark {
-    // brand colors
-    --c-brand: #3e8baf;
-    --c-brand-light: #3e8baf;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-header {
-    font-family: 'IBM Plex Sans Thai', sans-serif;
-}
-
-.sidebar,
-.navbar-links-wrapper {
-    font-family: 'Sarabun', sans-serif;
-    font-weight: 700;
-}
-
-.theme-default-content,
-p,
-footer {
-    font-family: 'Sarabun', sans-serif;
 }
 
 code {
-    font-family: 'IBM Plex Mono', 'Sarabun', monospace;
+    font-family: 'IBM Plex Mono', monospace;
 }
