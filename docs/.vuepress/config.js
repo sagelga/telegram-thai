@@ -2,8 +2,8 @@
 
 module.exports = {
     lang: 'th-TH',
-    title: 'กลุ่มแปลภาษา Telegram',
-    description: 'กลุ่มแปลภาษา Telegram ภาษาไทย',
+    title: 'เทเลแกรม',
+    description: 'กลุ่มแลกเปลี่ยนและแปลภาษา Telegram ให้เป็นภาษาไทย',
 
     themeConfig: {
         logo: 'https://telegram.org/img/t_logo.svg',
@@ -29,28 +29,6 @@ module.exports = {
         // Navigation
 
         navbar: require('./navbar/navbar.js'),
-        sidebar: {
-            '/contribute/': [{
-                text: 'เข้าร่วม',
-                children: [
-                    '/contribute/',
-                    '/contribute/guideline/'
-                ]
-            }],
-            '/install/': [{
-                text: 'ใช้งาน',
-                children: [
-                    '/install/',
-                ]
-            }],
-            '/community/': [{
-                text: 'ชุมชน',
-                children: [
-                    '/community/',
-                    '/community/guideline/'
-                ]
-            }],
-        },
 
     },
 
@@ -63,10 +41,3 @@ module.exports = {
         ],
     ],
 }
-
-// function getSideBar(root) {
-//     return fs
-//         .readdirSync(process.cwd() + '/docs/' + root)
-//         .map(sidebar => sidebar.replace('/index.md', ''))
-//         .replace(sidebar => )
-// }

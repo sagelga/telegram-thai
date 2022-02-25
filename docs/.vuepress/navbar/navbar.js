@@ -1,17 +1,18 @@
-module.exports = [{
-        text: 'เข้าร่วม',
-        link: '/contribute/'
+module.exports = [
+    {
+        text: 'ร่วมแปลภาษาไทย',
+        link: 'https://byteside.one/th/review/contribute-translate-telegram/'
     },
     {
-        text: 'ใช้งาน',
-        link: '/install/'
+        text: 'ใช้งานภาษาไทย',
+        link: 'https://byteside.one/th/productivity/telegram-use-thai-language/'
     },
     {
-        text: 'ชุมชน',
+        text: 'แนวทางการแปล',
+        link: '/guideline/'
+    },
+    {
+        text: 'ข้อกำหนดชุมชน',
         link: '/community/'
     },
-    {
-        text: 'Telegram',
-        link: 'https://translations.telegram.org/thaith'
-    }
 ]

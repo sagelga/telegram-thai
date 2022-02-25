@@ -1,25 +1,22 @@
 ---
 home: true
+heroText: กลุ่มการแปล Telegram
 heroImage: https://telegram.org/img/t_logo.svg
 actions:
-    - text: แปลภาษาไทย
-      link: /contribute/
+    - text: ร่วมแปลภาษาไทย
+      link: https://byteside.one/th/review/contribute-translate-telegram/
       type: primary
-    - text: ใช้ภาษาไทย
-      link: /install/
-      type: primary
-    - text: ชุมชนการแปล
-      link: /community/
+    - text: ใช้งานภาษาไทย
+      link: https://byteside.one/th/productivity/telegram-use-thai-language/
       type: primary
     - text: แนวทางในการแปล
-      link: /community/guideline/
-      type: secondary
-    - text: ข้อกำหนดในการใช้งานกลุ่ม
-      link: /community/guideline/
-      type: secondary
+      link: /guideline/
+      type: primary
+    - text: ข้อกำหนดชุมชน
+      link: /community/
+      type: primary
 ---
 
-## ยินดีต้อนรับ
 ยินดีต้อนรับทุกคนเข้าสู่หน้าแรกของเว็บไซต์กลุ่มการแปล Telegram เป็นภาษาไทย และเรายินดีมากที่จะต้อนรับคุณ
 เข้าสู่กลุ่มผู้ใช้งานที่ต้องการให้ Telegram นั้นรองรับภาษาไทยให้กับคุณและคนอีกเป็นจำนวนมากได้ใช้งานภาษาไทยภายในแอพฯ
 ได้สะดวกยิ่งขึ้น
@@ -33,8 +30,3 @@ actions:
 เพื่อให้ผู้ใช้งานทุกคนในประเทศไทยได้ใช้งาน Telegram กันอย่างกว้างขวาง
 พร้อมกับโปรเจ็กต์การแปลภาษา Telegram เป็นภาษาไทยที่จะลบข้อจำกัดทางด้านภาษา
 ให้คุณได้ใช้ Telegram เหมือนแอพฯ ที่คุณค้นเคยได้ทันที
-
-## ใช้ Telegram เป็นภาษาไทยได้แล้ว
-ปัจจุบันแพคภาษาไทยนั้นรองรับเฉพาะการใช้งานใน Android, iOS, Desktop (Windows และ macOS)​ และ macOS เท่านั้น ไม่รองรับการใช้งานแพ็กภาษาในเว็บไซต์ของ Telegram
-
-## เข้าร่วมเป็นอาสาสมัตรนักแปลภาษาใน Telegram
