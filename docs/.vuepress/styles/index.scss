@@ -1,11 +1,8 @@
 @import url('https://template.sagelga.com/styles/stylesheet.css');
 
 :root {
-    --font-family: 'Anuphan', 'IBM Plex Sans', sans-serif;
+    --font-family: "Anuphan", "IBM Plex Sans Thai", "IBM Plex Sans", sans-serif;
+    --font-family-code: "IBM Plex Mono", monospace;
     --c-brand: #3e8baf;
     --c-brand-light: #3e8baf;
-}
-
-code {
-    font-family: 'IBM Plex Mono', monospace;
 }
