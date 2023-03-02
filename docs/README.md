@@ -4,16 +4,19 @@ heroText: กลุ่มการแปล Telegram
 heroImage: https://telegram.org/img/t_logo.svg
 actions:
     - text: วิธีร่วมแปลภาษาไทย
-      link: https://byteside.one/th/review/contribute-translate-telegram/
+      link: https://bit.ly/3mjFu1d
       type: primary
     - text: วิธีใช้งานภาษาไทย
-      link: https://byteside.one/th/productivity/telegram-use-thai-language/
+      link: https://bit.ly/3J5DAtV
       type: primary
     - text: แนวทางในการแปล
       link: /guideline/
       type: primary
     - text: ข้อกำหนดชุมชน
       link: /community/
+      type: primary
+    - text: เข้าร่วมชุมชน
+      link: http://bit.ly/41zEDJU
       type: primary
 ---
 
