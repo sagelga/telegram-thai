@@ -1,14 +1,14 @@
 @import url('https://template.sagelga.com/styles/stylesheet.css');
 
 :root {
-    --font-family: "IBM Plex Sans Thai", sans-serif;
-    --font-family-code: "IBM Plex Mono", monospace;
+    --font-family: "Anuphan", "IBM Plex Sans Thai", "IBM Plex Sans", sans-serif;
+    --font-family-code: "JetBrains Mono", "Anuphan", "IBM Plex Sans Thai", monospace;
     --c-brand: #3e8baf;
-    --c-brand-light: #3e8baf;
+    --c-brand-light: #6DB9E5;
 }
 
 html.dark {
     // brand colors
     --c-brand: #2A5F7C;
-    --c-brand-light: #2A5F7C;
+    --c-brand-light: #3e8baf;
 }
