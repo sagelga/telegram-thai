@@ -1,6 +1,6 @@
 {
   "name": "telegram-thai",
-  "version": "2021.12.E",
+  "version": "2023.03.B",
   "description": "คำแนะนำและมาตรฐานสำหรับการแปล Telegram เป็นภาษาไทย",
   "main": "index.js",
   "repository": "https://github.com/sagelga/telegram-thai",
@@ -8,7 +8,9 @@
   "license": "Apache-2.0",
   "devDependencies": {
     "@vuepress/plugin-google-analytics": "next",
+    "@vuepress/plugin-register-components": "next",
     "@vuepress/plugin-search": "next",
+    "@vuepress/utils": "^2.0.0-alpha.1",
     "vuepress": "next"
   },
   "scripts": {
