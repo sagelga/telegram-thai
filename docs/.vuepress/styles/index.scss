@@ -5,10 +5,27 @@
     --font-family-code: "JetBrains Mono", "Anuphan", "IBM Plex Sans Thai", monospace;
     --c-brand: #3e8baf;
     --c-brand-light: #6DB9E5;
+    --c-bg-navbar: #3e8baf;
+}
+
+.navbar {
+    color: var(--c-bg);
+}
+
+.navbar .site-name {
+    color: var(--c-bg);
 }
 
 html.dark {
     // brand colors
-    --c-brand: #2A5F7C;
-    --c-brand-light: #3e8baf;
+    // --c-brand: #2A5F7C;
+    // --c-brand-light: #3e8baf;
+    --c-brand: #3e8baf;
+    --c-brand-light: #6DB9E5;
+}
+
+button.toggle-dark-button {
+    background-color: var(--c-bg);
+    border-radius: 50%; /* this makes the button round */
+    padding: 5px; /* this adds some space around the button content */
 }
