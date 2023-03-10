@@ -2,7 +2,7 @@
 
 module.exports = {
     lang: 'th-TH',
-    title: 'เทเลแกรม',
+    title: 'เทเลแกรม | Telegram',
     description: 'กลุ่มแลกเปลี่ยนและแปลภาษา Telegram ให้เป็นภาษาไทย',
 
     themeConfig: {
