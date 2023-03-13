@@ -5,15 +5,7 @@ module.exports = {
     title: 'เทเลแกรม | Telegram',
     description: 'กลุ่มแลกเปลี่ยนและแปลภาษา Telegram ให้เป็นภาษาไทย',
 
-    head: [
-        ['link', { rel: "apple-touch-icon", sizes: "180x180", href: "/icon/apple-touch-icon.png"}],
-        ['link', { rel: "icon", type: "image/png", sizes: "32x32", href: "/icon/favicon-32x32.png"}],
-        ['link', { rel: "icon", type: "image/png", sizes: "16x16", href: "/icon/favicon-16x16.png"}],
-        ['link', { rel: "mask-icon", href: "/icon/safari-pinned-tab.svg", color: "#3a0839"}],
-        ['link', { rel: "shortcut icon", href: "/favicon.ico"}],
-        ['meta', { name: "msapplication-TileColor", content: "#3a0839"}],
-        ['meta', { name: "theme-color", content: "#ffffff"}],
-      ],
+    head: require('./head/head.js'),
 
     themeConfig: {
         logo: '/favicon/android-chrome-192x192.png',
@@ -25,7 +17,7 @@ module.exports = {
         docsBranch: 'main',
 
         editLink: true,
-        editLinkText: 'แก้ไขเนื้อหาในหน้านี้',
+        editLinkText: 'รายงานปัญหาในหน้านี้',
         editLinkPattern: ':repo/edit/:branch/docs/:path',
 
         backToHome: 'กลับหน้าหลัก',
@@ -39,7 +31,6 @@ module.exports = {
         // Navigation
 
         navbar: require('./navbar/navbar.js'),
-
     },
 
     plugins: [
@@ -50,4 +41,4 @@ module.exports = {
             },
         ],
     ],
-}
+};
