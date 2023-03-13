@@ -1,10 +1,10 @@
 @import url('https://template.sagelga.com/styles/stylesheet.css');
-
 :root {
-    --font-family: "Anuphan", "IBM Plex Sans Thai", "IBM Plex Sans", sans-serif;
-    --font-family-code: "JetBrains Mono", "Anuphan", "IBM Plex Sans Thai", monospace;
+    --font-family: 'Anuphan', 'IBM Plex Sans Thai', 'IBM Plex Sans', sans-serif;
+    --font-family-code: 'JetBrains Mono', 'Anuphan', 'IBM Plex Sans Thai',
+        monospace;
     --c-brand: #3e8baf;
-    --c-brand-light: #6DB9E5;
+    --c-brand-light: #6db9e5;
     --c-bg-navbar: #3e8baf;
 }
 
@@ -17,15 +17,12 @@
 }
 
 html.dark {
-    // brand colors
-    // --c-brand: #2A5F7C;
-    // --c-brand-light: #3e8baf;
     --c-brand: #3e8baf;
-    --c-brand-light: #6DB9E5;
+    --c-brand-light: #6db9e5;
 }
 
-button.toggle-dark-button {
+button.toggle-color-mode-button, button.toggle-dark-button {
     background-color: var(--c-bg);
-    border-radius: 50%; /* this makes the button round */
-    padding: 5px; /* this adds some space around the button content */
+    border-radius: 50%;
+    padding: 5px;
 }

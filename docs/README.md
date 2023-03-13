@@ -1,7 +1,7 @@
 ---
 home: true
 heroText: กลุ่มการแปล Telegram
-heroImage: https://telegram.org/img/t_logo.svg
+heroImage: ./icon/android-chrome-512x512.png
 actions:
     - text: วิธีร่วมแปลภาษาไทย
       link: https://bit.ly/3mjFu1d
