@@ -1,0 +1,35 @@
+name: Telegram Translation Pack Issue Report
+description: Report a typo, language definition issue, or other bug about using the Telegram Translation pack
+title: "[BUG] "
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Telegram Translation Pack Issue Report
+  - type: input
+    id: version
+    attributes:
+      label: Telegram Translation Pack Version
+      description: What version of the Telegram Translation pack are you using?
+      placeholder: e.g. 1.0.0
+    validations:
+      required: true
+  - type: dropdown
+    id: issue-type
+    attributes:
+      label: Issue Type
+      description: What type of issue are you reporting?
+      options:
+        - Typo
+        - Language Definition Issue
+        - Other Bug
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: Please provide a detailed description of the issue you are reporting.
+    validations:
+      required: true
