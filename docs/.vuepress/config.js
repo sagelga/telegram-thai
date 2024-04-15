@@ -2,8 +2,7 @@
 
 module.exports = {
     lang: 'th-TH',
-    title: 'เทเลแกรม | Telegram',
-    description: 'กลุ่มแลกเปลี่ยนและแปลภาษา Telegram ให้เป็นภาษาไทย',
+    title: 'กลุ่มการแปลภาษา Telegram ภาษาไทย',
 
     head: require('./head/head.js'),
 
@@ -25,7 +24,7 @@ module.exports = {
         lastUpdated: true,
         lastUpdatedText: 'อัพเดทล่าสุด',
 
-        contributors: true,
+        contributors: false,
         contributorsText: 'แก้ไขโดย',
 
         // Navigation
