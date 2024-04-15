@@ -12,7 +12,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@master
 
       - name: Install yarn dependencies
         run: yarn
@@ -23,6 +23,6 @@ jobs:
           ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
           TARGET_REPO: sagelga/telegram-thai
           TARGET_BRANCH: website
-          BUILD_SCRIPT: yarn build
+          BUILD_SCRIPT: yarn && yarn build
           BUILD_DIR: docs/.vuepress/dist/
           CNAME: telegram.sagelga.com
