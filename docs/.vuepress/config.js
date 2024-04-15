@@ -3,7 +3,7 @@
 module.exports = {
     lang: 'th-TH',
     title: 'กลุ่มการแปลภาษา Telegram ภาษาไทย',
-
+    description: 'ร่วมแปล Telegram ให้เป็นภาษาไทยไปด้วยกัน',
     head: require('./head/head.js'),
 
     themeConfig: {
