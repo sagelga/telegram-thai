@@ -1,0 +1,11 @@
+name = "telegram-thai"
+compatibility_date = "2026-02-12"
+compatibility_flags = ["nodejs_compat"]
+
+[assets]
+directory = "docs/.vuepress/dist"
+
+[placement]
+mode = "smart"
+
+

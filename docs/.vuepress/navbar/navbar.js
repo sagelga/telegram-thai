@@ -1,4 +1,4 @@
-module.exports = [
+export default [
     {
         text: 'ร่วมแปลภาษา',
         link: 'https://bit.ly/3mjFu1d'

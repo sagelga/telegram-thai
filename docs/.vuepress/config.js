@@ -1,43 +1,46 @@
-// const fs = require("fs");
+import { viteBundler } from '@vuepress/bundler-vite'
+import { defaultTheme } from '@vuepress/theme-default'
+import { googleAnalyticsPlugin } from '@vuepress/plugin-google-analytics'
+import { defineUserConfig } from 'vuepress'
+import head from './head/head.js'
+import navbar from './navbar/navbar.js'
 
-module.exports = {
-    lang: 'th-TH',
-    title: 'กลุ่มการแปลภาษา Telegram ภาษาไทย',
-    description: 'ร่วมแปล Telegram ให้เป็นภาษาไทยไปด้วยกัน',
-    head: require('./head/head.js'),
+export default defineUserConfig({
+  lang: 'th-TH',
+  title: 'กลุ่มการแปลภาษา Telegram ภาษาไทย',
+  description: 'ร่วมแปล Telegram ให้เป็นภาษาไทยไปด้วยกัน',
+  head,
 
-    themeConfig: {
-        logo: '/favicon/android-chrome-192x192.png',
+  bundler: viteBundler(),
 
-        repo: 'sagelga/telegram-thai',
-        repoLabel: 'GitHub',
+  theme: defaultTheme({
+    logo: '/favicon/android-chrome-192x192.png',
 
-        docsRepo: 'https://github.com/sagelga/telegram-thai',
-        docsBranch: 'main',
+    repo: 'sagelga/telegram-thai',
+    repoLabel: 'GitHub',
 
-        editLink: true,
-        editLinkText: 'รายงานปัญหาในหน้านี้',
-        editLinkPattern: ':repo/edit/:branch/docs/:path',
+    docsRepo: 'https://github.com/sagelga/telegram-thai',
+    docsBranch: 'main',
 
-        backToHome: 'กลับหน้าหลัก',
+    editLink: true,
+    editLinkText: 'รายงานปัญหาในหน้านี้',
+    editLinkPattern: ':repo/edit/:branch/docs/:path',
 
-        lastUpdated: true,
-        lastUpdatedText: 'อัพเดทล่าสุด',
+    backToHome: 'กลับหน้าหลัก',
 
-        contributors: false,
-        contributorsText: 'แก้ไขโดย',
+    lastUpdated: true,
+    lastUpdatedText: 'อัพเดทล่าสุด',
 
-        // Navigation
+    contributors: false,
+    contributorsText: 'แก้ไขโดย',
 
-        navbar: require('./navbar/navbar.js'),
-    },
+    // Navigation
+    navbar,
+  }),
 
-    plugins: [
-        [
-            '@vuepress/plugin-google-analytics',
-            {
-                id: 'G-M6T0MZ2093',
-            },
-        ],
-    ],
-};
+  plugins: [
+    googleAnalyticsPlugin({
+      id: 'G-M6T0MZ2093',
+    }),
+  ],
+})
