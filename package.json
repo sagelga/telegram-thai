@@ -20,6 +20,6 @@
   "scripts": {
     "dev": "vuepress dev docs",
     "build": "vuepress build docs",
-    "deploy:cloudflare": "wrangler deploy"
+    "deploy:cloudflare": "CLOUDFLARE_ACCOUNT_ID=9124272a5c3e327f2e943bf27c0910c4 wrangler pages deploy docs/.vuepress/dist --project-name=telegram-thai"
   }
 }
