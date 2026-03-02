@@ -229,3 +229,5 @@ yarn-error.log
 # .pnp.*
 
 # End of https://www.toptal.com/developers/gitignore/api/vue,yarn,macos,vuejs,visualstudiocode,node
+
+.yarn/
