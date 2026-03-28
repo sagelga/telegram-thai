@@ -63,7 +63,7 @@ export default function Footer(): React.JSX.Element {
         <div className={styles.top}>
           <div className={styles.brand}>
             <a href="https://sagelga.com" className={styles.logoText}>sagelga</a>
-            <p className={styles.tagline}>telegram.sagelga.com — กลุ่มการแปล Telegram ภาษาไทย</p>
+            <p className={styles.tagline}>Telegram Thai by sagelga</p>
           </div>
           <div className={styles.columns}>
             {FOOTER_COLUMNS.map((col) => (
