@@ -91,7 +91,6 @@ export default function Footer(): React.JSX.Element {
 
         <div className={styles.bottom}>
           <span>© 2020–{year} sagelga</span>
-          <span className={styles.bottomCenter}>telegram.sagelga.com</span>
           <div className={styles.themeArea}>
             <button
               className={styles.themeBtn}

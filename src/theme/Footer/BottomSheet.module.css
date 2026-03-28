@@ -15,6 +15,7 @@
   left: 0;
   right: 0;
   background: #111111;
+  font-family: inherit;
   border: 1px solid #262626;
   border-bottom: none;
   border-radius: 16px 16px 0 0;
@@ -84,6 +85,11 @@
 /* Body */
 .body {
   padding: 0.75rem;
+}
+
+/* Ensure all buttons inside the sheet inherit the page font */
+.sheet button {
+  font-family: inherit;
 }
 
 @media (max-width: 520px) {
