@@ -13,17 +13,9 @@ const NAV_LINKS = [
 
 export default function Navbar(): React.JSX.Element {
   const location = useLocation();
-  const [scrolled, setScrolled] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => setScrolled(window.scrollY > 40);
-    handleScroll();
-    window.addEventListener('scroll', handleScroll, {passive: true});
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
 
   return (
-    <nav className={`${styles.navbar} ${scrolled ? styles.scrolled : ''}`}>
+    <nav className={styles.navbar} style={{ '--navbar-bg': '#3B4A8C' } as React.CSSProperties}>
       <div className={styles.navTop}>
         <div className={styles.navTopInner}>
           <Link to="/" className={styles.navLogoText}>

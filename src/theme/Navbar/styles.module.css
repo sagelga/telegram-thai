@@ -1,16 +1,15 @@
-/* ── Navbar — statuspage sagelga-brand style ── */
+/* ── Navbar — two-tier (top: logo + controls, bottom: nav links) ── */
 .navbar {
-  background: #3B4A8C;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  background: var(--navbar-bg, #3B4A8C);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
   position: sticky;
   top: 0;
-  z-index: var(--ifm-z-index-fixed, 200);
-  width: 100%;
+  z-index: 1000;
 }
 
 /* ── Top row ── */
 .navTop {
-  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .navTopInner {
@@ -26,17 +25,14 @@
 .navLogoText {
   font-size: 1.25rem;
   font-weight: 800;
-  color: #fff !important;
+  color: #ffffff;
   letter-spacing: -0.03em;
-  text-decoration: none !important;
-  font-family: var(--ifm-font-family-monospace, monospace);
-  transition: opacity 0.2s ease;
-  line-height: 1;
+  text-decoration: none;
+  transition: opacity 0.15s ease;
 }
 
 .navLogoText:hover {
-  opacity: 0.8;
-  text-decoration: none !important;
+  opacity: 0.85;
 }
 
 .navTopRight {
@@ -52,20 +48,20 @@
   width: 34px;
   height: 34px;
   border-radius: 8px;
-  color: rgba(255, 255, 255, 0.7) !important;
-  text-decoration: none !important;
+  color: rgba(255, 255, 255, 0.7);
+  text-decoration: none;
   transition: color 0.15s ease, background 0.15s ease;
 }
 
 .navGithubLink:hover {
-  color: #fff !important;
+  color: #ffffff;
   background: rgba(255, 255, 255, 0.12);
-  text-decoration: none !important;
+  text-decoration: none;
 }
 
 /* ── Bottom row ── */
 .navBottom {
-  background: rgba(0, 0, 0, 0.15);
+  background: rgba(0, 0, 0, 0.18);
 }
 
 .navBottomInner {
@@ -76,43 +72,47 @@
   align-items: center;
 }
 
+/* ── Nav list ── */
 .navList {
   list-style: none;
   display: flex;
   align-items: center;
+  gap: 0;
   margin: 0;
   padding: 0;
 }
 
+/* ── Nav link base ── */
 .navLink {
   display: flex;
   align-items: center;
   padding: 0.6rem 1.1rem;
-  color: rgba(255, 255, 255, 0.78) !important;
+  color: rgba(255, 255, 255, 0.78);
   font-size: 0.875rem;
   font-weight: 500;
-  text-decoration: none !important;
+  text-decoration: none;
+  border: none;
   border-bottom: 2px solid transparent;
+  background: transparent;
+  cursor: pointer;
   transition: color 0.15s ease, border-color 0.15s ease;
   white-space: nowrap;
-  letter-spacing: 0.2px;
-  line-height: 1;
-  height: 42px;
+  letter-spacing: 0.01em;
+  line-height: 1.5;
 }
 
 .navLink:hover {
-  color: #fff !important;
-  border-bottom-color: rgba(255, 255, 255, 0.45);
-  text-decoration: none !important;
+  color: #ffffff;
+  border-bottom-color: rgba(255, 255, 255, 0.4);
 }
 
 .navLinkActive {
-  color: #fff !important;
-  border-bottom-color: #fff !important;
+  color: #ffffff;
+  border-bottom-color: #ffffff;
   font-weight: 700;
 }
 
-/* ── Mobile ── */
+/* ── Mobile: horizontally scrollable bottom row ── */
 @media (max-width: 768px) {
   .navBottom {
     overflow-x: auto;
@@ -120,11 +120,7 @@
     -webkit-overflow-scrolling: touch;
     scrollbar-width: none;
   }
-
-  .navBottom::-webkit-scrollbar {
-    display: none;
-  }
-
+  .navBottom::-webkit-scrollbar { display: none; }
   .navBottomInner {
     padding: 0 0.75rem;
     min-width: max-content;
@@ -132,16 +128,5 @@
 }
 
 @media (max-width: 480px) {
-  .navTopInner {
-    padding: 0 0.75rem;
-  }
-}
-
-/* ── Reduced motion ── */
-@media (prefers-reduced-motion: reduce) {
-  .navLink,
-  .navGithubLink,
-  .navLogoText {
-    transition: none;
-  }
+  .navTopInner { padding: 0 0.75rem; }
 }

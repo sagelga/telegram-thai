@@ -54,8 +54,6 @@ function MoonIcon(): React.JSX.Element {
 }
 
 export default function Footer(): React.JSX.Element {
-  const {colorMode} = useColorMode();
-  const isDark = colorMode === 'dark';
   const [isThemeModalOpen, setIsThemeModalOpen] = useState(false);
   const year = new Date().getFullYear();
 
@@ -98,18 +96,37 @@ export default function Footer(): React.JSX.Element {
             <button
               className={styles.themeBtn}
               onClick={() => setIsThemeModalOpen(true)}
-              aria-label="เปลี่ยนธีม"
+              aria-label="Theme settings"
             >
-              {isDark ? <MoonIcon /> : <SunIcon />}
-              <span>{isDark ? 'มืด' : 'สว่าง'}</span>
+              <svg
+                width="13"
+                height="13"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2.2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                aria-hidden="true"
+              >
+                <circle cx="12" cy="12" r="5" />
+                <line x1="12" y1="1" x2="12" y2="3" />
+                <line x1="12" y1="21" x2="12" y2="23" />
+                <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
+                <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
+                <line x1="1" y1="12" x2="3" y2="12" />
+                <line x1="21" y1="12" x2="23" y2="12" />
+                <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
+                <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
+              </svg>
+              <span>Theme</span>
             </button>
-            <span className={styles.pipe}>|</span>
             <span className={styles.madeWith}>
               Made with{' '}
               <svg
                 className={styles.heart}
-                width="13"
-                height="13"
+                width="11"
+                height="11"
                 viewBox="0 0 24 24"
                 fill="currentColor"
                 aria-hidden="true"

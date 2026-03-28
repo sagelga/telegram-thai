@@ -1,12 +1,12 @@
-/* ── BottomSheet — from super, adapted with CSS Modules ── */
+/* ── BottomSheet — always dark, matching react-template ── */
 
 .overlay {
   position: fixed;
   inset: 0;
-  background: rgba(0, 0, 0, 0.5);
-  z-index: 9999;
+  background: rgba(0, 0, 0, 0.55);
+  z-index: 2000;
   backdrop-filter: blur(4px);
-  animation: fadeIn 0.2s ease-out;
+  animation: bs-fade-in 0.2s ease-out;
 }
 
 .sheet {
@@ -14,88 +14,80 @@
   bottom: 0;
   left: 0;
   right: 0;
-  background: #1A1814;
-  border: 1px solid #302C24;
+  background: #111111;
+  border: 1px solid #262626;
   border-bottom: none;
   border-radius: 16px 16px 0 0;
   width: 100%;
-  max-width: 500px;
+  max-width: 520px;
   margin: 0 auto;
-  box-shadow: 0 -8px 32px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 -8px 40px rgba(0, 0, 0, 0.5);
   overflow: hidden;
-  animation: slideUp 0.3s cubic-bezier(0.25, 1, 0.5, 1);
+  animation: bs-slide-up 0.28s cubic-bezier(0.32, 0.72, 0, 1);
   padding-bottom: env(safe-area-inset-bottom);
 }
 
+@keyframes bs-fade-in {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@keyframes bs-slide-up {
+  from { transform: translateY(100%); }
+  to   { transform: translateY(0); }
+}
+
+/* Drag handle */
 .dragHandle {
-  width: 40px;
+  width: 36px;
   height: 4px;
-  background: #302C24;
+  background: #2e2e2e;
   border-radius: 2px;
   margin: 0.75rem auto 0;
 }
 
+/* Header */
 .header {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 1.25rem 1.5rem;
-  border-bottom: 1px solid #302C24;
+  border-bottom: 1px solid #1f1f1f;
 }
 
 .title {
   margin: 0;
-  font-size: 1.125rem;
+  font-size: 1.0625rem;
   font-weight: 600;
-  color: #F0EAD6;
-  font-family: var(--ifm-font-family-base, sans-serif);
+  color: #f0f0f0;
+  letter-spacing: -0.01em;
 }
 
 .closeBtn {
   background: transparent;
   border: none;
   cursor: pointer;
-  color: #9A9485;
-  padding: 0.25rem;
+  color: #9ca3af;
+  padding: 0.3rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 4px;
-  transition: background 0.15s ease, color 0.15s ease;
+  border-radius: 6px;
+  transition: all 0.15s ease;
 }
 
 .closeBtn:hover {
-  background: #252219;
-  color: #F0EAD6;
+  background: #1f1f1f;
+  color: #f0f0f0;
 }
 
+/* Body */
 .body {
   padding: 0.75rem;
 }
 
-@keyframes fadeIn {
-  from { opacity: 0; }
-  to   { opacity: 1; }
-}
-
-@keyframes slideUp {
-  from { transform: translateY(100%); }
-  to   { transform: translateY(0); }
-}
-
-@media (max-width: 500px) {
-  .sheet {
-    max-width: 100%;
-  }
-  .header {
-    padding: 1rem 1.25rem;
-  }
-  .body {
-    padding: 0.5rem;
-  }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .overlay { animation: none; }
-  .sheet { animation: none; }
+@media (max-width: 520px) {
+  .sheet { max-width: 100%; }
+  .header { padding: 1rem 1.25rem; }
+  .body { padding: 0.5rem; }
 }
