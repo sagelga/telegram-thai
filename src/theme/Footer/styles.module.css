@@ -49,6 +49,16 @@
   line-height: 1.65;
 }
 
+.taglineProduct {
+  color: #d1d5db;
+  font-weight: 500;
+}
+
+.taglineBy {
+  color: #6b7280;
+  font-size: 0.82em;
+}
+
 .columns {
   flex: 1;
   display: flex;
