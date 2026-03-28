@@ -1,0 +1,147 @@
+/* ── Navbar — statuspage sagelga-brand style ── */
+.navbar {
+  background: #3B4A8C;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  position: sticky;
+  top: 0;
+  z-index: var(--ifm-z-index-fixed, 200);
+  width: 100%;
+}
+
+/* ── Top row ── */
+.navTop {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.navTopInner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  height: 52px;
+}
+
+.navLogoText {
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: #fff !important;
+  letter-spacing: -0.03em;
+  text-decoration: none !important;
+  font-family: var(--ifm-font-family-monospace, monospace);
+  transition: opacity 0.2s ease;
+  line-height: 1;
+}
+
+.navLogoText:hover {
+  opacity: 0.8;
+  text-decoration: none !important;
+}
+
+.navTopRight {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.navGithubLink {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  border-radius: 8px;
+  color: rgba(255, 255, 255, 0.7) !important;
+  text-decoration: none !important;
+  transition: color 0.15s ease, background 0.15s ease;
+}
+
+.navGithubLink:hover {
+  color: #fff !important;
+  background: rgba(255, 255, 255, 0.12);
+  text-decoration: none !important;
+}
+
+/* ── Bottom row ── */
+.navBottom {
+  background: rgba(0, 0, 0, 0.15);
+}
+
+.navBottomInner {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.navList {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.navLink {
+  display: flex;
+  align-items: center;
+  padding: 0.6rem 1.1rem;
+  color: rgba(255, 255, 255, 0.78) !important;
+  font-size: 0.875rem;
+  font-weight: 500;
+  text-decoration: none !important;
+  border-bottom: 2px solid transparent;
+  transition: color 0.15s ease, border-color 0.15s ease;
+  white-space: nowrap;
+  letter-spacing: 0.2px;
+  line-height: 1;
+  height: 42px;
+}
+
+.navLink:hover {
+  color: #fff !important;
+  border-bottom-color: rgba(255, 255, 255, 0.45);
+  text-decoration: none !important;
+}
+
+.navLinkActive {
+  color: #fff !important;
+  border-bottom-color: #fff !important;
+  font-weight: 700;
+}
+
+/* ── Mobile ── */
+@media (max-width: 768px) {
+  .navBottom {
+    overflow-x: auto;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+
+  .navBottom::-webkit-scrollbar {
+    display: none;
+  }
+
+  .navBottomInner {
+    padding: 0 0.75rem;
+    min-width: max-content;
+  }
+}
+
+@media (max-width: 480px) {
+  .navTopInner {
+    padding: 0 0.75rem;
+  }
+}
+
+/* ── Reduced motion ── */
+@media (prefers-reduced-motion: reduce) {
+  .navLink,
+  .navGithubLink,
+  .navLogoText {
+    transition: none;
+  }
+}

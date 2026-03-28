@@ -1,0 +1,101 @@
+/* ── ThemeSettingsModal — from super, CSS Modules ── */
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  padding: 0.25rem;
+}
+
+.option {
+  display: flex;
+  align-items: center;
+  gap: 0.875rem;
+  width: 100%;
+  padding: 1rem;
+  background: transparent;
+  border: 1px solid transparent;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background 0.15s ease, border-color 0.15s ease;
+  text-align: left;
+}
+
+.option:hover {
+  background: #252219;
+  border-color: #302C24;
+}
+
+.optionActive {
+  background: #252219;
+  border-color: #C9943A;
+}
+
+.optionIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
+  background: #1A1814;
+  border-radius: 10px;
+  color: #9A9485;
+  transition: background 0.15s ease, color 0.15s ease;
+}
+
+.option:hover .optionIcon {
+  color: #C9943A;
+}
+
+.optionActive .optionIcon {
+  background: #C9943A;
+  color: #F0EAD6;
+}
+
+.optionContent {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.125rem;
+}
+
+.optionLabel {
+  font-size: 0.9375rem;
+  font-weight: 500;
+  color: #F0EAD6;
+}
+
+.optionDesc {
+  font-size: 0.8125rem;
+  color: #9A9485;
+}
+
+.optionCheck {
+  color: #C9943A;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width: 480px) {
+  .option {
+    padding: 0.875rem;
+  }
+  .optionIcon {
+    width: 36px;
+    height: 36px;
+  }
+  .optionLabel {
+    font-size: 0.875rem;
+  }
+  .optionDesc {
+    font-size: 0.75rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .option, .optionIcon {
+    transition: none;
+  }
+}

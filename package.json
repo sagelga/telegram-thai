@@ -2,24 +2,34 @@
   "name": "telegram-thai",
   "version": "2023.03.B",
   "description": "คำแนะนำและมาตรฐานสำหรับการแปล Telegram เป็นภาษาไทย",
-  "main": "index.js",
   "repository": "https://github.com/sagelga/telegram-thai",
   "author": "Kunanon Srisuntiroj <son9912@gmail.com>",
   "license": "Apache-2.0",
+  "dependencies": {
+    "@docusaurus/core": "^3.0.0",
+    "@docusaurus/preset-classic": "^3.0.0",
+    "clsx": "^2.0.0",
+    "prism-react-renderer": "^2.3.0",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
+  },
   "devDependencies": {
-    "@vuepress/bundler-vite": "2.0.0-rc.26",
-    "@vuepress/plugin-google-analytics": "2.0.0-rc.122",
-    "@vuepress/plugin-register-components": "2.0.0-rc.122",
-    "@vuepress/plugin-search": "2.0.0-rc.122",
-    "@vuepress/theme-default": "2.0.0-rc.122",
-    "@vuepress/utils": "2.0.0-rc.26",
-    "sass-embedded": "^1.97.3",
-    "vuepress": "2.0.0-rc.26",
+    "@docusaurus/module-type-aliases": "^3.0.0",
+    "@docusaurus/tsconfig": "^3.0.0",
+    "@types/react": "^18.0.0",
+    "@types/react-dom": "^18.0.0",
+    "typescript": "^5.0.0",
     "wrangler": "^4.65.0"
   },
   "scripts": {
-    "dev": "vuepress dev docs",
-    "build": "vuepress build docs",
-    "deploy:cloudflare": "CLOUDFLARE_ACCOUNT_ID=9124272a5c3e327f2e943bf27c0910c4 wrangler pages deploy docs/.vuepress/dist --project-name=telegram-thai"
+    "dev": "docusaurus start",
+    "build": "docusaurus build",
+    "serve": "docusaurus serve",
+    "clear": "docusaurus clear",
+    "typecheck": "tsc --noEmit",
+    "deploy:cloudflare": "CLOUDFLARE_ACCOUNT_ID=9124272a5c3e327f2e943bf27c0910c4 wrangler pages deploy build --project-name=telegram-thai"
+  },
+  "engines": {
+    "node": ">=18.0"
   }
 }

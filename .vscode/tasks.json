@@ -6,7 +6,7 @@
       "script": "dev",
       "problemMatcher": [],
       "label": "npm: dev",
-      "detail": "vuepress dev docs"
+      "detail": "docusaurus start"
     }
   ]
 }

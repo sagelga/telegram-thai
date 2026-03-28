@@ -1,6 +1,4 @@
 name = "telegram-thai"
 compatibility_date = "2026-02-12"
 
-pages_build_output_dir = "docs/.vuepress/dist"
-
-
+pages_build_output_dir = "build"
